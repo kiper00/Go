@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	mongodb "kiper/Go/mongoDB"
+	"kiper/Go/postgre"
 )
 
 func main() {
@@ -16,5 +17,7 @@ func main() {
 		fmt.Println("Hello!")
 	case "mongo":
 		mongodb.DemoMongoDB()
+	case "postgre":
+		postgre.DemoPostgre()
 	}
 }
